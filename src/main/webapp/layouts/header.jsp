@@ -1,0 +1,1 @@
+<h1>Vulnerable application</h1>

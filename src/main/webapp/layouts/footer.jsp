@@ -1,0 +1,1 @@
+<p>Copyright (C) Guillaume Humbert 2011</p>

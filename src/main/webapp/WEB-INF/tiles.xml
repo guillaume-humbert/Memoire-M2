@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="memoire.page.common" template="/layouts/classic.jsp">
+		<put-attribute name="header" value="/layouts/header.jsp" />
+		<put-attribute name="left" value="/layouts/left.jsp" />
+		<put-attribute name="footer" value="/layouts/footer.jsp" />
+	</definition>
+    
+    <definition name="/index" extends="memoire.page.common">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="center" value="/index.jsp" />
+    </definition>
+    
+    <definition name="/" extends="memoire.page.common">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="center" value="/index.jsp" />
+    </definition>
+    
+    <definition name="/search" extends="memoire.page.common">
+        <put-attribute name="title" value="Search..." />
+        <put-attribute name="center" value="/search.jsp" />
+    </definition>
+</tiles-definitions>
