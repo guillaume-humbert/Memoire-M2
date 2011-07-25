@@ -1,0 +1,15 @@
+#header,#footer {
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+#left {
+	width: 15%;
+	float: left;
+}
+
+#center {
+	width: 70%;
+	float: left;
+}
