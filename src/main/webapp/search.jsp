@@ -5,6 +5,7 @@
         <input type="submit" value="Search" />
     </div>
 </form>
+
 <%
     String query = request.getParameter("q");
     if (query != null && !query.trim().isEmpty()) {

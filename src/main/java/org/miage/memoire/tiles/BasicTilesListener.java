@@ -12,6 +12,13 @@ import org.apache.tiles.web.startup.AbstractTilesListener;
 public final class BasicTilesListener extends AbstractTilesListener {
 
     /**
+     * Default constructor.
+     */
+    public BasicTilesListener() {
+        super();
+    }
+    
+    /**
      * {@inheritDoc}
      */
     @Override
