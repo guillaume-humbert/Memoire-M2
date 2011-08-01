@@ -2,6 +2,8 @@
 <ul id="pages">
 <li><a href="<%=pageContext.getServletContext().getContextPath()%>/index.html">Home</a></li>
 <li><a href="<%=pageContext.getServletContext().getContextPath()%>/search.html">Search</a></li>
+<li><a href="<%=pageContext.getServletContext().getContextPath()%>/loggedUsers.html">Logged users</a></li>
+<li><a href="<%=pageContext.getServletContext().getContextPath()%>/command.html">Help</a></li>
 </ul>
 
 <label for="tools">Tools</label>

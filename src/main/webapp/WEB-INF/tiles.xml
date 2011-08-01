@@ -24,6 +24,16 @@
         <put-attribute name="center" value="/search.jsp" />
     </definition>
     
+    <definition name="/loggedUsers" extends="memoire.page.common">
+        <put-attribute name="title" value="Logged users" />
+        <put-attribute name="center" value="/loggedUsers.jsp" />
+    </definition>
+    
+    <definition name="/command" extends="memoire.page.common">
+        <put-attribute name="title" value="Help center" />
+        <put-attribute name="center" value="/command.jsp" />
+    </definition>
+    
     <definition name="/converter" extends="memoire.page.common">
         <put-attribute name="title" value="Converter" />
         <put-attribute name="center" value="/converter.jsp" />
