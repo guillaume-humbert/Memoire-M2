@@ -30,8 +30,13 @@
     </definition>
     
     <definition name="/command" extends="memoire.page.common">
-        <put-attribute name="title" value="Help center" />
+        <put-attribute name="title" value="Command" />
         <put-attribute name="center" value="/command.jsp" />
+    </definition>
+    
+    <definition name="/sql" extends="memoire.page.common">
+        <put-attribute name="title" value="Sql" />
+        <put-attribute name="center" value="/sql.jsp" />
     </definition>
     
     <definition name="/converter" extends="memoire.page.common">

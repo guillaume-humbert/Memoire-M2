@@ -1,8 +1,6 @@
 package org.miage.memoire.tiles;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -59,7 +57,7 @@ public class TilesServlet extends HttpServlet {
      * @throws ServletException If an IO error occurs.
      */
     protected final void processRequest(final HttpServletRequest request,
-            final HttpServletResponse response) throws ServletException {        
+            final HttpServletResponse response) throws ServletException {
         String path = request.getRequestURI();
 
         path = path.replaceFirst(request.getContextPath(), "");

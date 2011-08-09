@@ -1,7 +1,5 @@
 package org.miage.memoire;
 
-import java.nio.charset.Charset;
-
 /**
  * This class provides utility conversion methods, like String in hex.
  * @author Guillaume Humbert
@@ -66,23 +64,6 @@ public final class Converter {
 
         return buffer.toString();
         
-    }
-    
-    public static void main(String[] args) throws Exception {
-        String s = "abcdeé";
-        StringBuilder buffer = new StringBuilder();
-        
-        byte[] bytes = s.getBytes(Charset.forName("utf-8"));
-        
-        /*
-        for (byte b : bytes) {
-            System.out.println(Integer.toHexString(b & 0xff) + " " +  (char)(b & 0xff));
-            buffer.append(new )
-        }
-        */
-        
-        String x = new String(bytes, "iso-8859-1");
-        System.out.println(x);
     }
     
     /**

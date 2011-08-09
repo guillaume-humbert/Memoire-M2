@@ -1,9 +1,5 @@
 package org.miage.memoire.bean;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.nio.charset.Charset;
-
 import org.miage.memoire.Converter;
 
 /**
@@ -64,20 +60,6 @@ public final class ConverterBean {
             this.stringToConvert = "";
         } else {
             this.stringToConvert = stringToConvert.trim();
-        }
-        
-        try {
-            String s = "";
-            byte[] buffer = stringToConvert.getBytes(Charset.forName("UTF-8"));
-            for(byte b : buffer) {
-                s = s + "%" + (Integer.toHexString(b & 0xff));
-            }
-            
-            FileWriter fw = new FileWriter("/home/humbert/Desktop/toto.txt");
-            fw.write(s + "\n");
-            fw.close();
-        } catch (Exception e) {
-            
         }
     }
 

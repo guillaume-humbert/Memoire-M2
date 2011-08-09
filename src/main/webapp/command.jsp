@@ -1,22 +1,21 @@
 <%@page import="java.io.InputStreamReader"%>
 <%@page import="java.io.BufferedReader"%>
-<h1>Help</h1>
+
+<h1>Choose an action</h1>
 
 <form action="command.html" method="get">
-	<select name="helpFile">
-		<option value="ls.html">ls.html</option>
-		<option value="cat.html">cat.html</option>
+	<select name="command">
+	    <option value="ls">List directory contents</option>
+	    <option value="date">Print the current date</option>
 	</select>
-	<br/>
-	<input type="submit" value="Submit">
+	<input type="submit" value="Execute">
 </form>
 
-<br/><br/>
-
 <%
-String file = request.getParameter("helpFile");
-if (file != null && !file.isEmpty()) {
-    Process p = Runtime.getRuntime().exec("sh -c cat " + file);
+String command = request.getParameter("command");
+if (command != null && !command.isEmpty()) {
+    
+    Process p = Runtime.getRuntime().exec(command);
     
     BufferedReader in = new BufferedReader(
             new InputStreamReader(p.getInputStream()));
@@ -37,8 +36,7 @@ if (file != null && !file.isEmpty()) {
         line = in.readLine();
     }
     in.close();
-    //out.print("Exit value: " + p.exitValue());
-    //p.destroy();
+    p.destroy();
     
 }
 %>
