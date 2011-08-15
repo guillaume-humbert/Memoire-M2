@@ -5,6 +5,7 @@
 <li><a href="<%=pageContext.getServletContext().getContextPath()%>/loggedUsers.html">Logged users</a></li>
 <li><a href="<%=pageContext.getServletContext().getContextPath()%>/command.html">Command</a></li>
 <li><a href="<%=pageContext.getServletContext().getContextPath()%>/sql.html">SQL</a></li>
+<li><a href="<%=pageContext.getServletContext().getContextPath()%>/unreleased.html">Unreleased</a></li>
 </ul>
 
 <label for="tools">Tools</label>

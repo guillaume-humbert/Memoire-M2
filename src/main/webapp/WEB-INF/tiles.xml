@@ -39,6 +39,11 @@
         <put-attribute name="center" value="/sql.jsp" />
     </definition>
     
+    <definition name="/unreleased" extends="memoire.page.common">
+        <put-attribute name="title" value="Unreleased" />
+        <put-attribute name="center" value="/unreleased.jsp" />
+    </definition>
+    
     <definition name="/converter" extends="memoire.page.common">
         <put-attribute name="title" value="Converter" />
         <put-attribute name="center" value="/converter.jsp" />
