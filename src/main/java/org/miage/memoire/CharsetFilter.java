@@ -13,7 +13,7 @@ import javax.servlet.ServletResponse;
  * This filter sets the UTF-8 charset on the request and response objects.
  * @author Guillaume Humbert
  */
-public class CharsetFilter implements Filter {
+public final class CharsetFilter implements Filter {
 
     /**
      * Default empty constructor.

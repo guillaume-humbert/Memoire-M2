@@ -1,5 +1,3 @@
-<%@page import="java.io.FileOutputStream"%>
-<%@page import="java.io.FileInputStream"%>
 <%@page import="java.io.IOException"%>
 <%@page import="java.io.InputStream"%>
 <%@page import="java.util.LinkedList"%>
@@ -64,15 +62,15 @@ public String toto(String host) throws IOException {
 public String tata(String host) throws IOException {
     
     String res = null;
-    InputStream iStream = null;
-    OutputStream oStream = null;
+    //InputStream iStream = null;
+    //OutputStream oStream = null;
     
     // Socket is opened.
     Socket socket = new Socket(host, 80);
     
     try {
-	    iStream = socket.getInputStream();
-	    oStream = socket.getOutputStream();
+	    //iStream = socket.getInputStream();
+	    //oStream = socket.getOutputStream();
     
 	    // Code ...
 	    // ...

@@ -4,7 +4,7 @@ package org.miage.memoire;
  * This class represents an user, and is used in the SQL injection part.
  * @author Guillaume Humbert
  */
-public class User {
+public final class User {
 
     /**
      * The user id.

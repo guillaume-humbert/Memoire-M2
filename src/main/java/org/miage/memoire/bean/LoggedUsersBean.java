@@ -7,7 +7,7 @@ import java.util.List;
  * This bean saves a list of logged users as strings.
  * @author Guillaume Humbert
  */
-public class LoggedUsersBean {
+public final class LoggedUsersBean {
 
     /**
      * The list of logged users.
