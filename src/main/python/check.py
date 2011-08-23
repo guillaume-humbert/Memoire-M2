@@ -1,12 +1,30 @@
-def check_age(age):
-	if age <= 0:
-		raise Exception("Invalid age.")
+# The decorator function.
+def log(fn):
 
-try:
-	check_age(0)
-except Exception as e:
-	print(e)
-else:
-	print("ok")
+	# The wrapped function.
+	def wrap(*args, **kwargs):
+		print("Entering '" + fn.__name__ + "'.")
 
+		# Arguments logging.
+		s = "Arguments: "
+		for a in args:
+			s = s + str(a) + ", "
+		for k in kwargs.keys():
+			s = s + k + ": " + str(kwargs[k]) + ", "
+		print(s[:-2])
+
+		# The real function is executed.
+		res = fn(*args, **kwargs)
+
+		print("Leaving '" + fn.__name__ + "'.")
+		print("Return value: " + str(res))
+		return res
+	
+	return wrap
+
+@log
+def add(x, y):
+	return x + y
+
+print("Result = " + str(add(2 ,3)))
 
