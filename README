@@ -1,1 +1,9 @@
-After tag
+This is my master's degree thesis, on the theme of web application security.
+
+In this paper I explain common vulnerabilities and propose elegant solutions to fix them (XSS/SQL injections, command injections, DOS, ...).
+
+Vulnerabilities are not only technical related matters, it is also an issue at the users and the business level.
+
+I also explain how to set up an intrusion detection policy.
+
+This paper is written in French.
